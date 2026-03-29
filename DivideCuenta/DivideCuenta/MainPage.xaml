@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DivideCuenta.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+
+            <Label
+                Text="DivideCuenta"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Calcula cuánto paga cada quien en la próxima salida c:"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Button
+                x:Name="btnDivideCuenta"
+                Text="Ir a dividir la cuenta"
+                Clicked="btnDivideCuenta_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
